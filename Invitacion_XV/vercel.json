@@ -2,18 +2,26 @@
   "version": 2,
   "builds": [
     {
-      "src": "*.html",
+      "src": "Invitacion_XV/*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "Invitacion_XV/imagenes/**",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "Invitacion_XV/styles.css",
       "use": "@vercel/static"
     }
   ],
   "rewrites": [
     {
       "source": "/",
-      "destination": "/index.html"
+      "destination": "/Invitacion_XV/index.html"
     },
     {
       "source": "/invitacion",
-      "destination": "/invitacion.html"
+      "destination": "/Invitacion_XV/invitacion.html"
     }
   ],
   "headers": [
